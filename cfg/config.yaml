@@ -1,4 +1,4 @@
 ---
 - projecttitle: hosting
-  jobrepo: test
+  jobrepo: https://github.com/jeffvdv/jenkinsjobdsl.git
   jobbranch: master
