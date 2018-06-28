@@ -14,7 +14,11 @@ new Yaml().load(readFileFromWorkspace("cfg/config.yaml")).each { p ->
     job("seedjobs/${projecttitle}-seedjob") {
 
         scm {
-            git("${jobrepo}", "${jobbranch}")
+            git{
+               url("${jobrepo}")
+               branch("${jobbranch}")
+            }
+            
         }
 
         steps {
